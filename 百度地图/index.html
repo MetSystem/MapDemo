@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -181,7 +181,9 @@
 
         // 设置聚合点
         function markerClustererProduct() {
-            markerClusterer = new BMapLib.MarkerClusterer(map, { markers: markersProduct });
+            // 自定义聚合点样式
+            //var _styles = [{ url: "http://www.yantiansf.cn/mapImage/1.gif", size: new BMap.Size(40, 40) }]
+            markerClusterer = new BMapLib.MarkerClusterer(map, { markers: markersProduct/*, styles: _styles */});
             markerClusterer.setMinClusterSize(5);
         }
 
